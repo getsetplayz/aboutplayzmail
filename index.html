@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Playzmail — About</title>
+    <meta name="description" content="About Playzmail — an email web just for our employees.To join go to playzmail.slack.com" />
+    <style>
+        :root{
+            --bg:#0f1724; --card:#0b1220; --accent:#6ee7b7; --muted:#94a3b8; --glass: rgba(255,255,255,0.03);
+            --maxw:960px; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        }
+        *{box-sizing:border-box}
+        html,body{height:100%}
+        body{
+            margin:0;
+            background:linear-gradient(180deg,#071026 0%, #051223 100%);
+            color:#e6eef8;
+            -webkit-font-smoothing:antialiased;
+            -moz-osx-font-smoothing:grayscale;
+            line-height:1.5;
+            padding:32px;
+            display:flex;
+            justify-content:center;
+            align-items:flex-start;
+        }
+        .container{
+            width:100%;
+            max-width:var(--maxw);
+        }
+        header{
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            gap:16px;
+            margin-bottom:28px;
+        }
+        .brand{
+            display:flex;
+            gap:12px;
+            align-items:center;
+            text-decoration:none;
+            color:inherit;
+        }
+        .logo{
+            width:48px;
+            height:48px;
+            display:inline-grid;
+            place-items:center;
+            border-radius:10px;
+            background:linear-gradient(135deg,var(--accent),#60a5fa);
+            color:#07203b;
+            font-weight:700;
+            font-size:20px;
+            box-shadow:0 6px 18px rgba(11,27,38,0.6);
+        }
+        nav a{
+            color:var(--muted);
+            text-decoration:none;
+            margin-left:18px;
+            font-size:14px;
+        }
+        .card{
+            background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+            border-radius:14px;
+            padding:28px;
+            box-shadow: 0 6px 30px rgba(2,6,23,0.6);
+            border:1px solid rgba(255,255,255,0.03);
+        }
+        .hero{
+            display:flex;
+            gap:28px;
+            align-items:center;
+            margin-bottom:22px;
+        }
+        .hero .left{flex:1}
+        h1{
+            margin:0 0 10px 0;
+            font-size:28px;
+            letter-spacing:-0.4px;
+        }
+        p.lead{
+            margin:0;
+            color:var(--muted);
+            max-width:60ch;
+        }
+        .tag{
+            display:inline-block;
+            margin-top:14px;
+            padding:6px 10px;
+            border-radius:999px;
+            background:var(--glass);
+            color:var(--accent);
+            font-weight:600;
+            font-size:13px;
+        }
+        .actions{
+            margin-top:18px;
+            display:flex;
+            gap:12px;
+            align-items:center;
+        }
+        .btn{
+            background:var(--accent);
+            border:0;
+            color:#042028;
+            padding:10px 14px;
+            border-radius:10px;
+            cursor:pointer;
+            font-weight:700;
+        }
+        .btn.secondary{
+            background:transparent;
+            color:var(--muted);
+            border:1px solid rgba(255,255,255,0.04);
+        }
+        .aside{
+            width:240px;
+            min-width:200px;
+            background:linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.01));
+            padding:18px;
+            border-radius:12px;
+            text-align:center;
+            color:var(--muted);
+        }
+        .features{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+            gap:14px;
+            margin-top:20px;
+        }
+        .feature{
+            background:rgba(255,255,255,0.02);
+            padding:14px;
+            border-radius:10px;
+            border:1px solid rgba(255,255,255,0.02);
+        }
+        footer{
+            margin-top:22px;
+            color:var(--muted);
+            font-size:14px;
+            display:flex;
+            justify-content:space-between;
+            gap:10px;
+            align-items:center;
+        }
+        form.subscribe{display:flex; gap:8px; margin-top:12px}
+        input[type="email"]{
+            background:transparent;
+            border:1px solid rgba(255,255,255,0.04);
+            color:inherit;
+            padding:10px 12px;
+            border-radius:8px;
+            flex:1;
+        }
+        small.note{color:var(--muted); display:block; margin-top:8px}
+        @media(max-width:740px){
+            .hero{flex-direction:column; align-items:flex-start}
+            .aside{width:100%}
+            footer{flex-direction:column; align-items:flex-start}
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <header>
+            <a class="brand" href="#">
+                <span class="logo">PZ</span>
+                <div>
+                    <strong>Playzmail</strong>
+                    <div style="font-size:12px; color:var(--muted)">playful mail for creators & gamers</div>
+                </div>
+            </a>
+            <nav aria-label="Main">
+                <a href="#about">About</a>
+                <a href="#features">Features</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <section class="card">
+            <div class="hero">
+                <div class="left">
+                    <span class="tag">About Playzmail</span>
+                    <h1>Playzmail — reimagining email with personality</h1>
+                    <p class="lead">
+                        Playzmail is a modern email experience built for creators, streamers, and players who want a colorful,
+                        low-friction way to connect with fans and friends. It combines fast inbox tools, playful themes, and
+                        privacy-forward defaults so you can spend less time sorting messages and more time creating.
+                    </p>
+
+                    <div class="actions" role="region" aria-label="Primary actions">
+                        <button class="btn" onclick="openSignup()">Get early access</button>
+                        <button class="btn secondary" onclick="openDocs()">How it works</button>
+                    </div>
+
+                    <div id="features" class="features" aria-hidden="false">
+                        <div class="feature">
+                            <strong>Custom Themes</strong>
+                            <div style="color:var(--muted); margin-top:6px">Skins and sounds that match your channel or team.</div>
+                        </div>
+                        <div class="feature">
+                            <strong>Streamlined Inbox</strong>
+                            <div style="color:var(--muted); margin-top:6px">Smart filters and quick replies for common requests.</div>
+                        </div>
+                        <div class="feature">
+                            <strong>Privacy First</strong>
+                            <div style="color:var(--muted); margin-top:6px">No trackers, encrypted attachments, and simple controls.</div>
+                        </div>
+                        <div class="feature">
+                            <strong>Creator Tools</strong>
+                            <div style="color:var(--muted); margin-top:6px">Built-in forms, fan mail organization, and monetization links.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="aside" aria-labelledby="aside-title">
+                    <div id="aside-title" style="font-weight:700; color:var(--accent)">Join the beta</div>
+                    <div style="color:var(--muted); margin-top:6px; font-size:13px">An email just for our employees.</div>
+                    <p style="margin:10px 0; color:var(--muted); font-size:14px">Sign up for updates and access to new features.</p>
+
+                    <form id="signup" class="subscribe" onsubmit="submitForm(event)">
+                        <input type="email" id="email" placeholder="you@domain.com" required aria-label="Email address" />
+                        <button class="btn" type="submit">Sign up</button>
+                    </form>
+                    <small class="note">No spam. Unsubscribe anytime.</small>
+                </aside>
+            </div>
+
+            <footer id="contact">
+                <div>
+                    <strong>Playzmail</strong> — Crafted for creators • <span style="color:var(--muted)">Beta</span>
+                </div>
+                <div style="color:var(--muted)">
+                    <a href="mailto:hello@playzmail.example" style="color:var(--muted); text-decoration:none">hello@playzmail.example</a>
+                </div>
+            </footer>
+        </section>
+    </main>
+
+    <script>
+        function openSignup(){
+            document.getElementById('email').focus();
+            window.scrollTo({top: document.getElementById('signup').offsetTop - 80, behavior:'smooth'});
+        }
+        function openDocs(){
+            alert('Playzmail is an experimental product. Docs coming soon.');
+        }
+        function submitForm(e){
+            e.preventDefault();
+            const email = document.getElementById('email').value.trim();
+            if(!email) return;
+            // Simulated submission — replace with real endpoint when available
+            const btn = e.target.querySelector('button');
+            const prev = btn.innerText;
+            btn.disabled = true;
+            btn.innerText = 'Signing...';
+            setTimeout(() => {
+                btn.innerText = 'Signed!';
+                btn.style.background = 'linear-gradient(90deg,#60a5fa,#6ee7b7)';
+                alert('Thanks! We will be in touch about Playzmail beta.');
+                btn.disabled = false;
+                btn.innerText = prev;
+                e.target.reset();
+            }, 900);
+        }
+    </script>
+</body>
+</html></div>
